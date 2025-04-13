@@ -1,0 +1,21 @@
+{
+  "name": "code_search_mcp",
+  "module": "server.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run ./server.ts",
+    "inspect": "bunx @modelcontextprotocol/inspector bun run ./server.ts",
+    "build": "bun build ./server.ts --compile --outfile ./dist/server"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.2"
+  }
+}
